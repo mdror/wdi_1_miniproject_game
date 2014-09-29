@@ -83,6 +83,18 @@ class Monster
       wrath of the Gods"
     end
   end
+# This code is not complete
+#   def fight(m,m2)
+#     if m.age > m2.age
+#       puts "the winner is #{m1}"
+#     end
+#   end
+# end
+
+
+
+
+
 end
 
 
