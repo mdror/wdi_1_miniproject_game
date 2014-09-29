@@ -91,8 +91,7 @@ class Monster
     end
   end
 end
-# This code is not complete This code will need to be revised so monsters can
-# battle
+# This code is not complete This code will need to be revised so monsters can battle
 
 #   def fight(m,m2)
 #     if m.age > m2.age
