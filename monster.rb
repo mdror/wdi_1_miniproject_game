@@ -44,7 +44,30 @@ class Monster
       sleep 3
     puts "The Gods have heard you and #{@name} shall be born as: #{@role}"
   end
+# Method age gives monsters an age which is randomly assigned
+# Outputs an integer
+# Output uses conditional to determine next string for output
 
+  def age
+    puts "The Gods are assigning a power to #{@name} Power is up to the Gods alone."
+      sleep 3
+    @age = rand(10..100)
+
+    puts "Attention!"
+    puts "The Gods have given #{@name} the age of #{@age} and this will determine #{@name} strength 1 is no more powerful than a fly, 100 is near God like power"
+      sleep 3
+    if @age > 50
+      puts "Attention! #{name} has awaken, now listen"
+      sleep 3
+      puts "My name is: #{@name}. My age is: #{@age} I am frightening to most other monsters though to the Gods I am still a mere gnat-- thank you for creating me and praise be to the Gods for my great powers"
+    else
+      puts "Attention! The Gods are awakening #{@name}"
+        sleep 3
+      puts "Arrrrr I am #{@name}. I am #{@age}"
+        sleep 3
+      puts "The Gods have given me tiny powers.  My powers equal a mere: #{@age} I am unlikely to be more powerful than most monsters and to a monster with a power > 50 'I am what a mouse is to an elephant'"
+    end
+  end
 
 
 end
