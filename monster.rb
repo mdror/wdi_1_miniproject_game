@@ -36,6 +36,14 @@ class Monster
       sleep 3
     puts "Congratulations: The Gods have granted your wish, they have christened your new monster:  #{@name}"
   end
+# Method role allows user to input what the monster does
+  def role
+    puts "Now give #{@name} a role"
+    @role = gets.chomp.upcase
+    puts "The Gods are considering your request, please wait 3 seconds"
+      sleep 3
+    puts "The Gods have heard you and #{@name} shall be born as: #{@role}"
+  end
 
 
 
