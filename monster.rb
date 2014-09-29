@@ -25,4 +25,18 @@ class Monster
     @age = age.to_i
     @power = power
   end
+# Create a method for name
+  def name
+# Input  string
+# Return datatype: string
+# String interpolation and Ruby method sleep
+  puts "name your monster"
+    @name = gets.chomp.upcase
+    puts "The Gods are considering your request please wait 3 seconds"
+      sleep 3
+    puts "Congratulations: The Gods have granted your wish, they have christened your new monster:  #{@name}"
+  end
+
+
+
 end
