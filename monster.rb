@@ -68,6 +68,22 @@ class Monster
       puts "The Gods have given me tiny powers.  My powers equal a mere: #{@age} I am unlikely to be more powerful than most monsters and to a monster with a power > 50 'I am what a mouse is to an elephant'"
     end
   end
-
-
+#Power method gives user a choice to give their monster more powers. Users conditional
+#Computer slects from 4 opposing possibilities in array
+  def power
+    puts "Do you want to request the Gods assign #{@name} some special power?"
+    puts "Warning! The Gods may spite you for asking for too much: Y or N?"
+      @power = gets.chomp
+        if @power == "Y"
+      @power = ["a seer", "as dumb as a cow", "as strong as an ox",
+      "as fragile as a bird"].sample
+      puts "#{@name} shall be: #{@power}"
+        else
+      puts "While #{@name} shall have not special #{@power} you did not incur the
+      wrath of the Gods"
+    end
+  end
 end
+
+
+
